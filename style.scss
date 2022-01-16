@@ -4,15 +4,11 @@
 
 
 
-@media (max-width:767px) {}
+
 
 body {
   font-family: 'Lato', sans-serif;
   display: grid;
-  // grid-template-columns:;
-
-  // grid-template-rows: 800px 470px 5fr 1fr 1fr 1fr 1fr 1fr 1fr 200px;
-  // grid-auto-rows: minmax(auto, 800px);
   text-align: center;
   justify-content: center;
 
@@ -20,7 +16,6 @@ body {
 
 section {
   max-width: 1600px;
-
 }
 
 .first {
@@ -32,7 +27,7 @@ section {
 }
 
 .header {
-  max-width: 620px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -74,15 +69,17 @@ section {
   .chain {
 
     width: 50px;
-    height: 50px;
     background-image: url(image/chain.png);
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
-    margin-top: 118px;
+    padding-top: 250px;
+    margin-bottom: -80px;
+   
   }
 
   @import 'h2-style';
+  @import 'p-style';
 
   p {
     max-width: 1080px;
@@ -90,13 +87,11 @@ section {
     padding-bottom: 140px;
   }
 
-  @import 'p-style';
-
-
 }
 
 .vintage {
   display: grid;
+
   grid-template-areas:
     'vintage-left vintage-text'
     'vintage-left vintage-bottom'
@@ -123,6 +118,8 @@ section {
 
   @import 'line';
 
+  @import 'arrow';
+
   .vintage-text img {
     margin-top: 48px;
   }
@@ -136,6 +133,106 @@ section {
     text-align: justify;
   }
 
-  @import 'arrow';
+  
 
+}
+
+.la-boriosa {
+  display: grid;
+  grid-template-areas:
+    'boriosa-text boriosa-right'
+    'boriosa-bottom boriosa-right'
+  ;
+  .boriosa-text {
+    grid-area: boriosa-text;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    h2 {
+      margin-bottom: 20px;
+    }
+    
+    p {
+      margin-bottom: 40px;
+      text-align: justify;
+    }
+    
+    img {
+      margin-top: 45px;
+    }
+
+    .line {
+      
+    }
+  }
+  
+  .boriosa-bottom {
+    grid-area: boriosa-bottom;
+    position: relative;
+  }
+  
+  .boriosa-right {
+    grid-area: boriosa-right;
+    position: relative;
+   
+  }
+  
+  .bor-logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: auto;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+  
+  }
+
+  @import 'h2-style';
+  
+  @import 'p-style';
+  
+  @import 'line';
+  
+  @import 'arrow';
+  
+
+}
+
+
+
+
+
+
+@media (max-width:767px) {
+  .vintage {
+    grid-template-areas:
+      'vintage-text'
+      'vintage-bottom'
+      'vintage-left'
+    ;
+
+    .vintage-bottom img {
+      width: 100%;
+    }
+  }
+
+  .la-boriosa {
+    grid-template-areas: 
+    'boriosa-text'
+    'boriosa-bottom '
+    'boriosa-right'
+    ;
+
+    .boriosa-bottom img {
+      width: 100%;
+    }
+
+   
+  }
 }
