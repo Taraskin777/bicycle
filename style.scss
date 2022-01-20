@@ -306,30 +306,26 @@ section {
     .retro-left img {
       width: 100%;
     }
-
     .retro-right img {
       width: 100%;
     }
-
-
-
-
   }
-
-
-
-
 
 }
 
 
 //Slider
 
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
 
 .slider {
   background-color: #f7f7f7;
   position: relative;
 
+
+  
   .aod-icon {
     width: 40px;
     height: 40px;

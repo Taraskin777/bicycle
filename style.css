@@ -384,6 +384,10 @@ section {
   }
 }
 
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+
 .slider {
   background-color: #f7f7f7;
   position: relative;
