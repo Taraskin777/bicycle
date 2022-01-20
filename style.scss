@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-
-
-
-
 body {
   font-family: 'Lato', sans-serif;
   display: grid;
@@ -16,6 +12,8 @@ body {
 
 section {
   max-width: 1600px;
+
+
 }
 
 .first {
@@ -23,8 +21,8 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   height: 800px;
-
 }
+
 
 .header {
   width: 100%;
@@ -75,7 +73,7 @@ section {
     margin: 0 auto;
     padding-top: 250px;
     margin-bottom: -80px;
-   
+
   }
 
   @import 'h2-style';
@@ -133,7 +131,7 @@ section {
     text-align: justify;
   }
 
-  
+
 
 }
 
@@ -143,73 +141,123 @@ section {
     'boriosa-text boriosa-right'
     'boriosa-bottom boriosa-right'
   ;
+
   .boriosa-text {
     grid-area: boriosa-text;
     padding-left: 50px;
     padding-right: 50px;
-    
+
     h2 {
       margin-bottom: 20px;
     }
-    
+
     p {
       margin-bottom: 40px;
       text-align: justify;
     }
-    
+
     img {
       margin-top: 45px;
     }
 
-    .line {
-      
-    }
+
   }
-  
+
   .boriosa-bottom {
     grid-area: boriosa-bottom;
     position: relative;
   }
-  
+
   .boriosa-right {
     grid-area: boriosa-right;
     position: relative;
-   
+
   }
-  
+
   .bor-logo {
     position: absolute;
     width: 100px;
     height: 100px;
     z-index: 10;
     background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   margin: auto;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-  
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
   }
 
   @import 'h2-style';
-  
+
   @import 'p-style';
-  
+
   @import 'line';
-  
+
   @import 'arrow';
-  
+
+
+}
+
+
+.retro-bike {
+  display: grid;
+
+  @import 'h2-style';
+
+  @import 'p-style';
+
+  @import 'line';
+
+  @import 'arrow';
+
+
+  grid-template-areas:
+    'retro-left retro-text retro-right'
+    'retro-left retro-middle-bottom retro-right'
+
+  ;
+
+  .retro-left {
+    grid-area: retro-left;
+  }
+
+  .retro-text {
+    grid-area: retro-text;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 40px;
+      text-align: justify;
+    }
+
+    img {
+      margin-top: 37px;
+    }
+  }
+
+
+
+  .retro-middle-bottom {
+    grid-area: retro-middle-bottom;
+  }
+
+  .retro-right {
+    grid-area: retro-right;
+  }
 
 }
 
 
 
-
-
-
-@media (max-width:767px) {
+@media (max-width:1024px) {
   .vintage {
     grid-template-areas:
       'vintage-text'
@@ -217,22 +265,209 @@ section {
       'vintage-left'
     ;
 
+
     .vintage-bottom img {
+      width: 100%;
+    }
+
+    .vintage-left img {
       width: 100%;
     }
   }
 
   .la-boriosa {
-    grid-template-areas: 
-    'boriosa-text'
-    'boriosa-bottom '
-    'boriosa-right'
+    grid-template-areas:
+      'boriosa-text'
+      'boriosa-bottom '
+      'boriosa-right'
     ;
 
     .boriosa-bottom img {
       width: 100%;
     }
 
-   
+    .boriosa-right img {
+      width: 100%;
+    }
   }
+
+  .retro-bike {
+    grid-template-areas:
+      'retro-text'
+      'retro-middle-bottom'
+      'retro-left'
+      'retro-right'
+    ;
+
+    .retro-middle-bottom img {
+      width: 100%;
+    }
+
+    .retro-left img {
+      width: 100%;
+    }
+
+    .retro-right img {
+      width: 100%;
+    }
+
+
+
+
+  }
+
+
+
+
+
+}
+
+
+//Slider
+
+
+.slider {
+  background-color: #f7f7f7;
+  position: relative;
+
+  .aod-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 125px;
+    margin-bottom: 35px;
+    letter-spacing: 2;
+  }
+
+  .title {
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+
+  .title span {
+    font-weight: bold;
+  }
+
+  .time {
+    color: rgba(0, 0, 0, 0.486);
+  }
+
+  .slide1 p {
+    max-width: 940px;
+    margin: 0 auto;
+    margin-bottom: 185px;
+    font-size: 24px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.486);
+    line-height: 1.5;
+
+  }
+
+  .slick-dots {
+    bottom: 70px;
+  }
+
+  .slick-dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    background-color: inherit;
+  }
+
+  .slick-dots .slick-active {
+    background-color: rgba(128, 128, 128, 0.575);
+
+  }
+
+  .slick-dots li button:before {
+    content: none;
+  }
+
+}
+
+
+.shop-now {
+
+  display: grid;
+  grid-template-areas:
+    'shop-left-box shop-middle-box shop-right-box'
+  ;
+
+  .shop-left-box {
+    grid-area: shop-left-box;
+
+  }
+
+  .shop-middle-box {
+    grid-area: shop-middle-box;
+    display: grid;
+  }
+
+  .shop-right-box {
+    grid-area: shop-right-box;
+    display: grid;
+  }
+
+}
+
+
+.shop-left-box {
+  display: grid;
+  grid-template-areas:
+    'left-left left-right'
+    'left-bottom left-bottom'
+  ;
+
+  .left-left {
+    grid-area: left-left;
+  }
+
+  .left-right {
+    grid-area: left-right;
+  }
+
+  .left-bottom {
+    grid-area: left-bottom;
+  }
+}
+
+.shop-middle-box {
+  display: grid;
+  grid-template-areas:
+    'middle-left middle-right'
+  ;
+
+
+  .middle-left {
+    grid-area: middle-left;
+  }
+
+  .middle-right {
+    grid-area: middle-right;
+  }
+
+}
+
+
+.shop-right-box {
+  display: grid;
+  grid-template-areas:
+    'right-top right-top'
+    'right-bottom-left right-bottom-right'
+  ;
+
+  .right-top {
+    grid-area: right-top;
+  }
+
+  .right-bottom-left {
+    grid-area: right-bottom-left;
+  }
+
+  .right-bottom-right {
+    grid-area: right-bottom-right;
+  }
+
+
 }

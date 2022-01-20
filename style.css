@@ -267,11 +267,98 @@ section {
   right: 0;
 }
 
-@media (max-width: 767px) {
+.retro-bike {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'retro-left retro-text retro-right' 'retro-left retro-middle-bottom retro-right';
+}
+
+.retro-bike h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 35px 0 35px 0;
+  color: rgba(0, 0, 0, 0.644);
+  letter-spacing: 2px;
+}
+
+.retro-bike p {
+  margin: 0 auto;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.658);
+  font-size: 16px;
+}
+
+.retro-bike .line {
+  color: rgba(0, 0, 0, 0.486);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+.retro-bike .arrow {
+  position: absolute;
+  background-image: url(image/arrow_down.png);
+  width: 28px;
+  height: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.retro-bike .retro-left {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: retro-left;
+}
+
+.retro-bike .retro-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: retro-text;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.retro-bike .retro-text h2 {
+  margin-bottom: 20px;
+}
+
+.retro-bike .retro-text p {
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.retro-bike .retro-text img {
+  margin-top: 37px;
+}
+
+.retro-bike .retro-middle-bottom {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: retro-middle-bottom;
+}
+
+.retro-bike .retro-right {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: retro-right;
+}
+
+@media (max-width: 1024px) {
   .vintage {
         grid-template-areas: 'vintage-text' 'vintage-bottom' 'vintage-left';
   }
   .vintage .vintage-bottom img {
+    width: 100%;
+  }
+  .vintage .vintage-left img {
     width: 100%;
   }
   .la-boriosa {
@@ -280,5 +367,173 @@ section {
   .la-boriosa .boriosa-bottom img {
     width: 100%;
   }
+  .la-boriosa .boriosa-right img {
+    width: 100%;
+  }
+  .retro-bike {
+        grid-template-areas: 'retro-text' 'retro-middle-bottom' 'retro-left' 'retro-right';
+  }
+  .retro-bike .retro-middle-bottom img {
+    width: 100%;
+  }
+  .retro-bike .retro-left img {
+    width: 100%;
+  }
+  .retro-bike .retro-right img {
+    width: 100%;
+  }
+}
+
+.slider {
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.slider .aod-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 125px;
+  margin-bottom: 35px;
+  letter-spacing: 2;
+}
+
+.slider .title {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.slider .title span {
+  font-weight: bold;
+}
+
+.slider .time {
+  color: rgba(0, 0, 0, 0.486);
+}
+
+.slider .slide1 p {
+  max-width: 940px;
+  margin: 0 auto;
+  margin-bottom: 185px;
+  font-size: 24px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.486);
+  line-height: 1.5;
+}
+
+.slider .slick-dots {
+  bottom: 70px;
+}
+
+.slider .slick-dots li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  background-color: inherit;
+}
+
+.slider .slick-dots .slick-active {
+  background-color: rgba(128, 128, 128, 0.575);
+}
+
+.slider .slick-dots li button:before {
+  content: none;
+}
+
+.shop-now {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'shop-left-box shop-middle-box shop-right-box';
+}
+
+.shop-now .shop-left-box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: shop-left-box;
+}
+
+.shop-now .shop-middle-box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: shop-middle-box;
+  display: -ms-grid;
+  display: grid;
+}
+
+.shop-now .shop-right-box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: shop-right-box;
+  display: -ms-grid;
+  display: grid;
+}
+
+.shop-left-box {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'left-left left-right' 'left-bottom left-bottom';
+}
+
+.shop-left-box .left-left {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: left-left;
+}
+
+.shop-left-box .left-right {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: left-right;
+}
+
+.shop-left-box .left-bottom {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: left-bottom;
+}
+
+.shop-middle-box {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'middle-left middle-right';
+}
+
+.shop-middle-box .middle-left {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: middle-left;
+}
+
+.shop-middle-box .middle-right {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: middle-right;
+}
+
+.shop-right-box {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'right-top right-top' 'right-bottom-left right-bottom-right';
+}
+
+.shop-right-box .right-top {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: right-top;
+}
+
+.shop-right-box .right-bottom-left {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: right-bottom-left;
+}
+
+.shop-right-box .right-bottom-right {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: right-bottom-right;
 }
 /*# sourceMappingURL=style.css.map */
