@@ -306,6 +306,7 @@ section {
     .retro-left img {
       width: 100%;
     }
+
     .retro-right img {
       width: 100%;
     }
@@ -325,7 +326,7 @@ section {
   position: relative;
 
 
-  
+
   .aod-icon {
     width: 40px;
     height: 40px;
@@ -384,7 +385,7 @@ section {
 
 
 .shop-now {
-
+ 
   display: grid;
   grid-template-areas:
     'shop-left-box shop-middle-box shop-right-box'
@@ -407,6 +408,75 @@ section {
 
 }
 
+.shop-image {
+  position: relative;
+  
+
+  .bg-green {
+    background-image: url(image/Bg-green.png);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    display: none;
+  
+  }
+
+  .bicycle {
+    background-image: url(image/bicycle.png);
+    position: absolute;
+    z-index: 10;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+    cursor: pointer;
+   
+  }
+
+  .bicycle-text {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 60%;
+    color: white;
+    z-index: 10;
+    display: none;
+
+  }
+
+  .middle-text {
+    top: 55%;
+    display: none;
+  }
+
+}
+
+
+
+.shop-now :hover > .bg-green  {
+  display: block;
+  
+}
+.shop-now :hover >  .bicycle  {
+  display: block;
+ 
+}
+.shop-now :hover > .bicycle-text  {
+  display: block;
+}
+.shop-now :hover > .bg-green  {
+  display: block;
+  
+}
 
 .shop-left-box {
   display: grid;
@@ -465,5 +535,86 @@ section {
     grid-area: right-bottom-right;
   }
 
+
+}
+
+
+.discover {
+  background-color: #282f35;
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  .discover-button button {
+    width: 300px;
+    height: 50px;
+    border: 2px solid grey;
+    margin: 0 auto;
+    background-color: inherit;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+  }
+
+  .discover-button :hover {
+    background-color: rgba(128, 128, 128, 0.37);
+    color: white;
+    transition: 0.5s;
+    border: 2px solid rgba(255, 255, 255, 0.685);
+  }
+}
+
+
+.stay-on {
+  background-color:  #f7f7f7;
+
+
+  .bottom-logo {
+    padding-top: 110px;
+    padding-bottom: 35px;
+
+
+  }
+
+    p {
+    padding-bottom: 35px;
+    font-size: 24px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.658);
+  }
+
+  .enter-mail {
+    padding-bottom: 110px;
+  }
+    input {
+      height: 70px;
+      width: 400px;
+      border: 1px solid rgba(128, 128, 128, 0.397);
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-style: italic;
+      margin-right: 5px;
+      padding-top: 7px;
+      color: rgba(0, 0, 0, 0.342);
+      padding-left: 20px;
+      
+    }
+     ::-webkit-input-placeholder {
+       color: rgba(0, 0, 0, 0.342);
+   
+     }
+
+    .go {
+      height: 70px;
+      width: 125px;
+      border: none;
+      background-color: #64c29e;
+      color: white;
+      font-size: 24px;
+      line-height: 70px;
+      cursor: pointer;
+    }
 
 }
