@@ -385,7 +385,7 @@ section {
 
 
 .shop-now {
- 
+
   display: grid;
   grid-template-areas:
     'shop-left-box shop-middle-box shop-right-box'
@@ -410,7 +410,7 @@ section {
 
 .shop-image {
   position: relative;
-  
+
 
   .bg-green {
     background-image: url(image/Bg-green.png);
@@ -422,7 +422,7 @@ section {
     right: 0;
     z-index: 5;
     display: none;
-  
+
   }
 
   .bicycle {
@@ -438,7 +438,7 @@ section {
     background-repeat: no-repeat;
     display: none;
     cursor: pointer;
-   
+
   }
 
   .bicycle-text {
@@ -462,20 +462,23 @@ section {
 
 
 
-.shop-now :hover > .bg-green  {
+.shop-now :hover>.bg-green {
   display: block;
-  
+
 }
-.shop-now :hover >  .bicycle  {
+
+.shop-now :hover>.bicycle {
   display: block;
- 
+
 }
-.shop-now :hover > .bicycle-text  {
+
+.shop-now :hover>.bicycle-text {
   display: block;
 }
-.shop-now :hover > .bg-green  {
+
+.shop-now :hover>.bg-green {
   display: block;
-  
+
 }
 
 .shop-left-box {
@@ -568,7 +571,7 @@ section {
 
 
 .stay-on {
-  background-color:  #f7f7f7;
+  background-color: white;
 
 
   .bottom-logo {
@@ -578,7 +581,7 @@ section {
 
   }
 
-    p {
+  p {
     padding-bottom: 35px;
     font-size: 24px;
     font-style: italic;
@@ -588,33 +591,98 @@ section {
   .enter-mail {
     padding-bottom: 110px;
   }
-    input {
-      height: 70px;
-      width: 400px;
-      border: 1px solid rgba(128, 128, 128, 0.397);
-      margin-bottom: 10px;
-      font-size: 20px;
-      font-style: italic;
-      margin-right: 5px;
-      padding-top: 7px;
-      color: rgba(0, 0, 0, 0.342);
-      padding-left: 20px;
-      
-    }
-     ::-webkit-input-placeholder {
-       color: rgba(0, 0, 0, 0.342);
-   
-     }
 
-    .go {
-      height: 70px;
-      width: 125px;
-      border: none;
-      background-color: #64c29e;
-      color: white;
-      font-size: 24px;
-      line-height: 70px;
-      cursor: pointer;
-    }
+  input {
+    height: 70px;
+    width: 400px;
+    border: 1px solid rgba(128, 128, 128, 0.397);
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-style: italic;
+    margin-right: 5px;
+    padding-top: 7px;
+    color: rgba(0, 0, 0, 0.342);
+    padding-left: 20px;
+
+  }
+
+  ::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.342);
+
+  }
+
+  .go {
+    height: 70px;
+    width: 125px;
+    border: none;
+    background-color: #64c29e;
+    color: white;
+    font-size: 24px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+
+  .go:hover {
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.582);
+    border: 1px solid black;
+    transition: 0.5s;
+
+  }
+
+}
+
+
+.footer-info {
+  background-color: #f7f7f7;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+.adress {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: start;
+  color: rgba(0, 0, 0, 0.61);
+  height: 70px;
+  
+
+}
+
+
+.socbut {
+  line-height: 70px;
+}
+.socbut button {
+  cursor: pointer;
+}
+
+  .soc-icon {
+    width: 35px;
+    height: 35px;
+    border: none;
+    margin: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .twitter {
+    background-image: url(image/twitter.png);
+
+
+  }
+
+  .facebook {
+    background-image: url(image/facebook2.png);
+
+  }
+
+  .pinterest {
+    background-image: url(image/pinterest2.png);
+
+  }
+
 
 }

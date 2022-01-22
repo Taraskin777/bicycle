@@ -632,7 +632,7 @@ section {
 }
 
 .stay-on {
-  background-color: #f7f7f7;
+  background-color: white;
 }
 
 .stay-on .bottom-logo {
@@ -677,5 +677,63 @@ section {
   font-size: 24px;
   line-height: 70px;
   cursor: pointer;
+}
+
+.stay-on .go:hover {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.582);
+  border: 1px solid black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer-info {
+  background-color: #f7f7f7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-info .adress {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  text-align: start;
+  color: rgba(0, 0, 0, 0.61);
+  height: 70px;
+}
+
+.footer-info .socbut {
+  line-height: 70px;
+}
+
+.footer-info .socbut button {
+  cursor: pointer;
+}
+
+.footer-info .soc-icon {
+  width: 35px;
+  height: 35px;
+  border: none;
+  margin: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-info .twitter {
+  background-image: url(image/twitter.png);
+}
+
+.footer-info .facebook {
+  background-image: url(image/facebook2.png);
+}
+
+.footer-info .pinterest {
+  background-image: url(image/pinterest2.png);
 }
 /*# sourceMappingURL=style.css.map */
