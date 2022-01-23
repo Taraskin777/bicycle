@@ -12,6 +12,8 @@ body {
 
 section {
   max-width: 1600px;
+  margin: 0 auto;
+ 
 
 
 }
@@ -20,30 +22,62 @@ section {
   background-image: url(image/head.png);
   background-position: center;
   background-repeat: no-repeat;
-  height: 800px;
+  // background-size: contain;
+ height: 800px;
+
 }
+
 
 
 .header {
-  width: 100%;
+  // width: 100%;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 150px 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 20px;
+  height: 85px;
+  margin-left: 425px;
+  margin-right: 425px;
+
 }
 
 
-.menu {
+.menu-left {
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  max-width: 620px;
-  margin: 0 auto;
-  height: 85px;
+line-height: 85px;
+  li {
+    list-style: none;
+    font-size: 13px;
+    font-weight: bold;
+    // margin: 5px;
+    width: 100px;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.685);
+      letter-spacing: 1px;
+    }
+  }
+}
+
+
+.menu-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   line-height: 85px;
-  margin-top: 35px;
+
 
   li {
     list-style: none;
     font-size: 13px;
     font-weight: bold;
+    // margin: 5px;
+    width: 100px;
 
     a {
       text-decoration: none;
@@ -59,9 +93,12 @@ section {
 }
 
 
+
+
 .new-generation {
 
   background-color: #f7f7f7;
+  justify-content: center;
 
 
   .chain {
@@ -256,63 +293,6 @@ section {
 }
 
 
-
-@media (max-width:1024px) {
-  .vintage {
-    grid-template-areas:
-      'vintage-text'
-      'vintage-bottom'
-      'vintage-left'
-    ;
-
-
-    .vintage-bottom img {
-      width: 100%;
-    }
-
-    .vintage-left img {
-      width: 100%;
-    }
-  }
-
-  .la-boriosa {
-    grid-template-areas:
-      'boriosa-text'
-      'boriosa-bottom '
-      'boriosa-right'
-    ;
-
-    .boriosa-bottom img {
-      width: 100%;
-    }
-
-    .boriosa-right img {
-      width: 100%;
-    }
-  }
-
-  .retro-bike {
-    grid-template-areas:
-      'retro-text'
-      'retro-middle-bottom'
-      'retro-left'
-      'retro-right'
-    ;
-
-    .retro-middle-bottom img {
-      width: 100%;
-    }
-
-    .retro-left img {
-      width: 100%;
-    }
-
-    .retro-right img {
-      width: 100%;
-    }
-  }
-
-}
 
 
 //Slider
@@ -632,6 +612,10 @@ section {
 
 }
 
+.footer {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 
 .footer-info {
   background-color: #f7f7f7;
@@ -640,23 +624,24 @@ section {
   padding-top: 100px;
   padding-bottom: 100px;
 
-.adress {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: start;
-  color: rgba(0, 0, 0, 0.61);
-  height: 70px;
-  
-
-}
+  .adress {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: start;
+    color: rgba(0, 0, 0, 0.61);
+    height: 70px;
 
 
-.socbut {
-  line-height: 70px;
-}
-.socbut button {
-  cursor: pointer;
-}
+  }
+
+
+  .socbut {
+    line-height: 70px;
+  }
+
+  .socbut button {
+    cursor: pointer;
+  }
 
   .soc-icon {
     width: 35px;
@@ -684,5 +669,125 @@ section {
 
   }
 
+  
+
 
 }
+
+@media (max-width:768px) {
+
+}
+
+
+@media (max-width:1024px) {
+
+  .first {
+    width: 100%;
+    width: auto;
+  }
+
+
+
+  .vintage {
+
+    grid-template-areas:
+      'vintage-text'
+      'vintage-bottom'
+      'vintage-left'
+    ;
+
+
+    .vintage-bottom img {
+      width: 100%;
+    }
+
+    .vintage-left img {
+      width: 100%;
+    }
+  }
+
+  .la-boriosa {
+    grid-template-areas:
+      'boriosa-text'
+      'boriosa-bottom '
+      'boriosa-right'
+    ;
+
+    .boriosa-text {
+      width: 100%;
+      width: auto;
+    }
+
+
+
+    .boriosa-bottom img {
+      width: 100%;
+    }
+
+    .boriosa-right img {
+      width: 100%;
+    }
+  }
+
+  .retro-bike {
+    grid-template-areas:
+      'retro-text'
+      'retro-middle-bottom'
+      'retro-left'
+      'retro-right'
+    ;
+
+    .retro-middle-bottom img {
+      width: 100%;
+    }
+
+    .retro-left img {
+      width: 100%;
+    }
+
+    .retro-right img {
+      width: 100%;
+    }
+  }
+
+
+  .shop-now {
+    grid-template-areas:
+      'shop-middle-box shop-left-box'
+
+      'shop-right-box shop-right-box'
+    ;
+
+    .shop-image>img {
+      width: 100%;
+    }
+  }
+}
+
+
+// .nav-mobile-menu {
+//   width: 25px;
+//   height: 15px;
+//   position: relative;
+// }
+
+// .nav-mobile-menu span {
+//   height: 1px;
+//   left: 0;
+//   right: 0;
+//   position: absolute;
+//   background-color: black;
+//   transition: .25s ease-in-out;
+// }
+
+// .nav-mobile-menu span:nth-child(1) {
+//   top: 3px;
+// }
+
+// .nav-mobile-menu span:nth-child(2) {
+//   top: 7px;
+// }
+
+// .nav-mobile-menu span:nth-child(3) {
+//   bottom: 3px;
+// }
