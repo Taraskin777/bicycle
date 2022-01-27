@@ -33,7 +33,7 @@ section {
     // width: 100%;
 
     .base-menu {
-      visibility: hidden;
+      // visibility: hidden;
     }
 
 
@@ -657,7 +657,6 @@ section {
   .twitter {
     background-image: url(image/twitter.png);
 
-
   }
 
   .facebook {
@@ -669,9 +668,6 @@ section {
     background-image: url(image/pinterest2.png);
 
   }
-
-
-
 
 }
 
@@ -687,16 +683,18 @@ section {
     justify-items: center;
 
   }
-  
+
  .logo {
-   padding-top: 10px;
+   padding-top: 50px;
+   padding-right: 300px;
+ 
  }
 
   .nav-mobile-menu {
-    width: 35px;
-    height: 30px;
+    width: 100px;
+    height: 50px;
     position: relative;
-    margin-top: 25px;
+    margin-top: 50px;
   }
  
   
@@ -709,16 +707,15 @@ section {
       position: fixed;
       display: grid;
       grid-template-columns: 1fr;
-      top: 110px;
+      top: 150px;
       justify-items: end;
-      right: 60%;
       z-index: 20;
 
       li {
         margin-top: 10px;
         a {
           text-decoration: none;
-          font-size: 25px;
+          font-size: 30px;
           color: black;
   
         }
@@ -740,15 +737,15 @@ section {
   }
 
   .nav-mobile-menu span:nth-child(1) {
-    top: 5px;
+    top: 10px;
   }
 
   .nav-mobile-menu span:nth-child(2) {
-    top: 15px;
+    top: 25px;
   }
 
   .nav-mobile-menu span:nth-child(3) {
-    bottom: 5px;
+    bottom: 10px;
   }
 
   .navigation {
@@ -804,8 +801,8 @@ section {
 @media (max-width:1024px) {
 
   .first {
-    width: 100%;
-    // width: auto;
+    // width: 100%;
+    
   }
 
 
