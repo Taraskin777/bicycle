@@ -684,7 +684,7 @@ section {
   .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: end;
+    justify-items: center;
 
   }
   
@@ -805,7 +805,7 @@ section {
 
   .first {
     width: 100%;
-    width: auto;
+    // width: auto;
   }
 
 

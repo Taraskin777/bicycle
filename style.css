@@ -740,7 +740,7 @@ section {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    justify-items: end;
+    justify-items: center;
   }
   .logo {
     padding-top: 10px;
@@ -843,7 +843,6 @@ section {
 @media (max-width: 1024px) {
   .first {
     width: 100%;
-    width: auto;
   }
   .vintage {
         grid-template-areas: 'vintage-text' 'vintage-bottom' 'vintage-left';
