@@ -6,7 +6,7 @@ body {
   font-family: 'Lato', sans-serif;
   display: grid;
   text-align: center;
-  justify-content: center;
+  // justify-content: center;
 
 }
 
@@ -98,6 +98,7 @@ section {
 
   background-color: #f7f7f7;
   justify-content: center;
+ 
 
 
   .chain {
@@ -139,6 +140,7 @@ section {
     grid-area: vintage-text;
     padding-left: 50px;
     padding-right: 50px;
+    // text-align: center;
   }
 
   .vintage-bottom {
