@@ -52,6 +52,14 @@ section {
   letter-spacing: 1px;
 }
 
+.first .header .menu-left li a:hover {
+  color: #49a783;
+  border: 1px solid #64c29e;
+  padding: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .first .header .menu-right {
   display: -ms-grid;
   display: grid;
@@ -73,6 +81,14 @@ section {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.685);
   letter-spacing: 1px;
+}
+
+.first .header .menu-right li a:hover {
+  color: #49a783;
+  border: 1px solid #64c29e;
+  padding: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .first .header .logo {
@@ -855,7 +871,6 @@ section {
   }
   .la-boriosa .boriosa-text {
     width: 100%;
-    width: auto;
   }
   .la-boriosa .boriosa-bottom img {
     width: 100%;

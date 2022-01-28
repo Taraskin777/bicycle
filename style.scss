@@ -6,7 +6,7 @@ body {
   font-family: 'Lato', sans-serif;
   display: grid;
   text-align: center;
-  // justify-content: center;
+ 
 
 }
 
@@ -45,6 +45,7 @@ section {
       grid-template-rows: 1fr;
       line-height: 85px;
 
+
       li {
         list-style: none;
         font-size: 13px;
@@ -58,8 +59,22 @@ section {
           color: rgba(0, 0, 0, 0.685);
           letter-spacing: 1px;
         }
+
+        a:hover {
+          color: #49a783;
+          border: 1px solid #64c29e;
+          padding: 10px;
+          transition: .5s;
+        }
+
+
       }
+
+      
     }
+
+
+ 
 
 
     .menu-right {
@@ -67,7 +82,8 @@ section {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
       line-height: 85px;
-
+      
+      
 
       li {
         list-style: none;
@@ -79,6 +95,13 @@ section {
           text-transform: uppercase;
           color: rgba(0, 0, 0, 0.685);
           letter-spacing: 1px;
+        }
+
+        a:hover {
+          color: #49a783;
+          border: 1px solid #64c29e;
+          padding: 10px;
+          transition: .5s;
         }
       }
     }
@@ -367,6 +390,7 @@ section {
 
 .shop-now {
 
+
   display: grid;
   grid-template-areas:
     'shop-left-box shop-middle-box shop-right-box'
@@ -403,7 +427,6 @@ section {
     right: 0;
     z-index: 5;
     display: none;
-
   }
 
   .bicycle {
@@ -419,7 +442,6 @@ section {
     background-repeat: no-repeat;
     display: none;
     cursor: pointer;
-
   }
 
   .bicycle-text {
@@ -445,8 +467,10 @@ section {
 
 .shop-now :hover>.bg-green {
   display: block;
-
+  
 }
+
+
 
 .shop-now :hover>.bicycle {
   display: block;
@@ -462,6 +486,7 @@ section {
 
 }
 
+
 .shop-left-box {
   display: grid;
   grid-template-areas:
@@ -476,7 +501,7 @@ section {
   .left-right {
     grid-area: left-right;
   }
-
+ 
   .left-bottom {
     grid-area: left-bottom;
   }
@@ -701,6 +726,7 @@ section {
 
   .base-menu {
     position: relative;
+    // visibility: visible;
     
 
     .vertical-menu {
@@ -818,10 +844,12 @@ section {
 
     .vintage-bottom img {
       width: 100%;
+      // width: auto;
     }
 
     .vintage-left img {
       width: 100%;
+      // width: auto;
     }
   }
 
@@ -834,17 +862,19 @@ section {
 
     .boriosa-text {
       width: 100%;
-      width: auto;
+      // width: auto;
     }
 
 
 
     .boriosa-bottom img {
       width: 100%;
+      // width: auto;
     }
 
     .boriosa-right img {
       width: 100%;
+      // width: auto;
     }
   }
 
@@ -858,14 +888,17 @@ section {
 
     .retro-middle-bottom img {
       width: 100%;
+      // width: auto;
     }
 
     .retro-left img {
       width: 100%;
+      // width: auto;
     }
 
     .retro-right img {
       width: 100%;
+      // width: auto;
     }
   }
 
@@ -879,6 +912,7 @@ section {
 
     .shop-image>img {
       width: 100%;
+      // width: auto;
     }
   }
 }
