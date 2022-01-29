@@ -24,6 +24,7 @@ section {
 
 .first {
   background-image: url(image/head.png);
+  background-position: center;
   background-size: cover;
   width: 100%;
   height: 800px;
@@ -748,6 +749,21 @@ section {
 }
 
 @media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .new-generation h2 {
+    font-size: 30px;
+  }
+  .new-generation p {
+    font-size: 25px;
+  }
+  .middle h2 {
+    font-size: 30px;
+  }
+  .middle p {
+    font-size: 25px;
+  }
   .base-menu .active-menu {
     visibility: visible;
   }
@@ -767,7 +783,7 @@ section {
     height: 50px;
     position: relative;
     margin-top: 50px;
-    margin-left: 500px;
+    margin-left: 350px;
   }
   .base-menu {
     position: relative;
@@ -848,7 +864,7 @@ section {
   }
   .base-menu.active-menu {
     visibility: visible;
-    margin-left: 450px;
+    margin-left: 250px;
     -webkit-transform: translateX(1);
             transform: translateX(1);
     -webkit-transition: 0.5s;
@@ -874,7 +890,25 @@ section {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+  .first {
+    width: 100%;
+  }
+  .new-generation h2 {
+    font-size: 30px;
+  }
+  .new-generation p {
+    font-size: 25px;
+  }
+  .middle h2 {
+    font-size: 30px;
+  }
+  .middle p {
+    font-size: 25px;
+  }
   .vintage {
         grid-template-areas: 'vintage-text' 'vintage-bottom' 'vintage-left';
   }
@@ -913,6 +947,12 @@ section {
   }
   .shop-now .shop-image > img {
     width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1600px;
   }
 }
 /*# sourceMappingURL=style.css.map */
