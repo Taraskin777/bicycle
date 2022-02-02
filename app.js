@@ -3,6 +3,15 @@ $(".slider").slick({
   autoplay: true,
   adaptiveHeight: true,
   arrows: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  
+  ]
 });
 
 AOS.init();

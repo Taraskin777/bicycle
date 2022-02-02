@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  display: grid;
+  
   text-align: center;
 
 }
@@ -38,6 +38,8 @@ width: 100%;
   // position: relative;
 
   .header {
+
+    padding-top: 20px;
     
     .menu-left {
       display: grid;
@@ -157,18 +159,21 @@ width: 100%;
 
   .vintage-left {
     grid-area: vintage-left;
+ 
   }
 
   .vintage-text {
     grid-area: vintage-text;
     padding-left: 50px;
     padding-right: 50px;
+    width: 100%;
     // text-align: center;
   }
 
   .vintage-bottom {
     grid-area: vintage-bottom;
     position: relative;
+  
   }
 
   @import 'h2-style';
@@ -227,11 +232,13 @@ width: 100%;
   .boriosa-bottom {
     grid-area: boriosa-bottom;
     position: relative;
+
   }
 
   .boriosa-right {
     grid-area: boriosa-right;
     position: relative;
+
 
   }
 
@@ -283,12 +290,14 @@ width: 100%;
 
   .retro-left {
     grid-area: retro-left;
+ 
   }
 
   .retro-text {
     grid-area: retro-text;
     padding-left: 50px;
     padding-right: 50px;
+    width: 100%;
 
     h2 {
       margin-bottom: 20px;
@@ -308,10 +317,12 @@ width: 100%;
 
   .retro-middle-bottom {
     grid-area: retro-middle-bottom;
+ 
   }
 
   .retro-right {
     grid-area: retro-right;
+
   }
 
 }
@@ -390,6 +401,10 @@ width: 100%;
 
 .shop-now {
 
+  img {
+    width: 100%;
+
+  }
 
   display: grid;
   grid-template-areas:
@@ -415,6 +430,7 @@ width: 100%;
 
 .shop-image {
   position: relative;
+  
 
 
   .bg-green {
@@ -600,7 +616,7 @@ width: 100%;
 
   input {
     height: 70px;
-    width: 400px;
+    max-width: 400px;
     border: 1px solid rgba(128, 128, 128, 0.397);
     margin-bottom: 10px;
     font-size: 20px;
@@ -698,9 +714,6 @@ width: 100%;
 
 @media (max-width:768px) {
 
-  .container {
-    max-width: 768px;
-  }
 
   .new-generation {
     h2 {
@@ -743,7 +756,7 @@ width: 100%;
     height: 50px;
     position: relative;
     margin-top: 50px;
-    margin-left: 350px;
+    margin-left: 100px;
   }
  
   
@@ -843,7 +856,7 @@ width: 100%;
 
   .base-menu.active-menu {
     visibility: visible;
- margin-left: 250px;
+ margin-left: 50px;
  transform: translateX(1);
  transition: 0.5s;
  
@@ -863,7 +876,7 @@ width: 100%;
     display: grid;
     grid-template-columns: 1fr 150px 1fr;
     grid-template-rows: 1fr;
-    margin-top: 20px;
+    // margin-top: 20px;
     height: 85px;
     max-width: 850px;
   }
@@ -875,7 +888,7 @@ width: 100%;
 
 }
 
-@media (max-width:992px) {
+@media (max-width:1024px) {
 
   .container {
     max-width: 992px;
@@ -981,7 +994,7 @@ width: 100%;
       'shop-right-box shop-right-box'
     ;
 
-    .shop-image>img {
+    .shop-image img {
       width: 100%;
       // width: auto;
     }
@@ -990,17 +1003,45 @@ width: 100%;
 
 
 
-@media(min-width:1200px) {
+@media(max-width:1440px) {
 
-
-  .container {
-    max-width: 1600px;
+  .vintage-left img{
+    width: 100%;
+height: 100%;
+  }
+  .vintage-text{
+    width: 100%;
+    height: 100%;
+  }
+  .vintage-bottom img{
+    width: 100%;
+    height: 100%;
+  }
+  .boriosa-text{
+    width: 100%;
+    height: 100%;
+  }
+  .boriosa-bottom img{
+    width: 100%;
+    height: 100%;
+  }
+  .boriosa-right img{
+    width: 100%;
+    height: 100%;
+  }
+ 
+  .retro-text{
+    width: 100%;
+    height: 100%;
+  }
+  .retro-middle-bottom img{
+    width: 100%;
+    height: 100%;
+  }
+  .retro-right img{
+    width: 100%;
+    height: 100%;
   }
 
-
-
-  // .base-menu {
-  //   display: none;
-  // }
 
 }

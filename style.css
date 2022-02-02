@@ -5,8 +5,6 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  display: -ms-grid;
-  display: grid;
   text-align: center;
 }
 
@@ -28,6 +26,10 @@ section {
   background-size: cover;
   width: 100%;
   height: 800px;
+}
+
+.first .header {
+  padding-top: 20px;
 }
 
 .first .header .menu-left {
@@ -153,6 +155,7 @@ section {
   grid-area: vintage-text;
   padding-left: 50px;
   padding-right: 50px;
+  width: 100%;
 }
 
 .vintage .vintage-bottom {
@@ -362,6 +365,7 @@ section {
   grid-area: retro-text;
   padding-left: 50px;
   padding-right: 50px;
+  width: 100%;
 }
 
 .retro-bike .retro-text h2 {
@@ -455,6 +459,10 @@ section {
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'shop-left-box shop-middle-box shop-right-box';
+}
+
+.shop-now img {
+  width: 100%;
 }
 
 .shop-now .shop-left-box {
@@ -659,7 +667,7 @@ section {
 
 .stay-on input {
   height: 70px;
-  width: 400px;
+  max-width: 400px;
   border: 1px solid rgba(128, 128, 128, 0.397);
   margin-bottom: 10px;
   font-size: 20px;
@@ -749,9 +757,6 @@ section {
 }
 
 @media (max-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
   .new-generation h2 {
     font-size: 30px;
   }
@@ -783,7 +788,7 @@ section {
     height: 50px;
     position: relative;
     margin-top: 50px;
-    margin-left: 350px;
+    margin-left: 100px;
   }
   .base-menu {
     position: relative;
@@ -864,7 +869,7 @@ section {
   }
   .base-menu.active-menu {
     visibility: visible;
-    margin-left: 250px;
+    margin-left: 50px;
     -webkit-transform: translateX(1);
             transform: translateX(1);
     -webkit-transition: 0.5s;
@@ -881,7 +886,6 @@ section {
         grid-template-columns: 1fr 150px 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-    margin-top: 20px;
     height: 85px;
     max-width: 850px;
   }
@@ -890,7 +894,7 @@ section {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .container {
     max-width: 992px;
   }
@@ -945,14 +949,47 @@ section {
   .shop-now {
         grid-template-areas: 'shop-middle-box shop-left-box'  'shop-right-box shop-right-box';
   }
-  .shop-now .shop-image > img {
+  .shop-now .shop-image img {
     width: 100%;
   }
 }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1600px;
+@media (max-width: 1440px) {
+  .vintage-left img {
+    width: 100%;
+    height: 100%;
+  }
+  .vintage-text {
+    width: 100%;
+    height: 100%;
+  }
+  .vintage-bottom img {
+    width: 100%;
+    height: 100%;
+  }
+  .boriosa-text {
+    width: 100%;
+    height: 100%;
+  }
+  .boriosa-bottom img {
+    width: 100%;
+    height: 100%;
+  }
+  .boriosa-right img {
+    width: 100%;
+    height: 100%;
+  }
+  .retro-text {
+    width: 100%;
+    height: 100%;
+  }
+  .retro-middle-bottom img {
+    width: 100%;
+    height: 100%;
+  }
+  .retro-right img {
+    width: 100%;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
