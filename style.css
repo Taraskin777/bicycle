@@ -461,7 +461,7 @@ section {
       grid-template-areas: 'shop-left-box shop-middle-box shop-right-box';
 }
 
-.shop-now img {
+.shop-now .shop-image img {
   width: 100%;
 }
 
@@ -788,7 +788,6 @@ section {
     height: 30px;
     position: relative;
     margin-top: 50px;
-    margin-left: 100px;
   }
   .base-menu {
     position: relative;
@@ -805,7 +804,7 @@ section {
     border: 1px solid rgba(0, 0, 0, 0.26);
     background-color: #64c29e9f;
     height: 250px;
-    right: 15%;
+    right: 5%;
   }
   .base-menu .vertical-menu li {
     margin-top: 10px;
@@ -988,6 +987,9 @@ section {
   .retro-right img {
     width: 100%;
     height: 100%;
+  }
+  .shop-image img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
