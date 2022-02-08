@@ -781,11 +781,11 @@ section {
   }
   .logo {
     padding-top: 50px;
-    padding-right: 300px;
+    padding-right: 70px;
   }
   .nav-mobile-menu {
-    width: 100px;
-    height: 50px;
+    width: 50px;
+    height: 30px;
     position: relative;
     margin-top: 50px;
     margin-left: 100px;
@@ -803,17 +803,16 @@ section {
     justify-items: end;
     z-index: 20;
     border: 1px solid rgba(0, 0, 0, 0.26);
-    background-color: #64c29e41;
-    height: 340px;
-    padding-top: 10px;
+    background-color: #64c29e9f;
+    height: 250px;
+    right: 15%;
   }
   .base-menu .vertical-menu li {
     margin-top: 10px;
-    margin: 10px;
   }
   .base-menu .vertical-menu li a {
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
     color: rgba(0, 0, 0, 0.664);
     padding: 10px;
   }
@@ -840,8 +839,7 @@ section {
   }
   .navigation {
     position: fixed;
-    width: 280px;
-    max-width: 280px;
+    width: 150px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -947,7 +945,7 @@ section {
     width: 100%;
   }
   .shop-now {
-        grid-template-areas: 'shop-middle-box shop-left-box'  'shop-right-box shop-right-box';
+        grid-template-areas: 'shop-left-box' 'shop-middle-box ' 'shop-right-box';
   }
   .shop-now .shop-image img {
     width: 100%;

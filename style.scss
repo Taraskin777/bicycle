@@ -747,13 +747,13 @@ width: 100%;
 
  .logo {
    padding-top: 50px;
-   padding-right: 300px;
+   padding-right: 70px;
  
  }
 
   .nav-mobile-menu {
-    width: 100px;
-    height: 50px;
+    width: 50px;
+    height: 30px;
     position: relative;
     margin-top: 50px;
     margin-left: 100px;
@@ -774,17 +774,18 @@ width: 100%;
       justify-items: end;
       z-index: 20;
       border: 1px solid rgba(0, 0, 0, 0.26);
-      background-color: #64c29e41;
-      height: 340px;
-      padding-top: 10px;
+      background-color: #64c29e9f;
+      height: 250px;
+      // padding-top: 5px;
+    right: 15%;
 
       li {
         margin-top: 10px;
-        margin: 10px;
+        // margin: 10px;
         
         a {
           text-decoration: none;
-          font-size: 40px;
+          font-size: 30px;
           color: rgba(0, 0, 0, 0.664);
           padding: 10px;
         
@@ -826,8 +827,7 @@ width: 100%;
 
   .navigation {
     position: fixed;
-    width: 280px;
-    max-width: 280px;
+    width: 150px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -989,15 +989,17 @@ width: 100%;
 
   .shop-now {
     grid-template-areas:
-      'shop-middle-box shop-left-box'
-
-      'shop-right-box shop-right-box'
+      'shop-left-box'
+      'shop-middle-box '
+      'shop-right-box'
     ;
 
     .shop-image img {
       width: 100%;
       // width: auto;
     }
+
+
   }
 }
 
