@@ -149,6 +149,11 @@ section {
   grid-area: vintage-left;
 }
 
+.vintage .vintage-left img {
+  max-width: 1067px;
+  height: 100%;
+}
+
 .vintage .vintage-text {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -163,6 +168,11 @@ section {
   -ms-grid-column: 2;
   grid-area: vintage-bottom;
   position: relative;
+}
+
+.vintage .vintage-bottom img {
+  width: 100%;
+  height: 100%;
 }
 
 .vintage h2 {
@@ -227,6 +237,7 @@ section {
   grid-area: boriosa-text;
   padding-left: 50px;
   padding-right: 50px;
+  width: 100%;
 }
 
 .la-boriosa .boriosa-text h2 {
@@ -249,12 +260,22 @@ section {
   position: relative;
 }
 
+.la-boriosa .boriosa-bottom img {
+  max-width: 100%;
+  height: 100%;
+}
+
 .la-boriosa .boriosa-right {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: boriosa-right;
   position: relative;
+}
+
+.la-boriosa .boriosa-right img {
+  max-width: 1067px;
+  height: 100%;
 }
 
 .la-boriosa .bor-logo {
@@ -359,6 +380,11 @@ section {
   grid-area: retro-left;
 }
 
+.retro-bike .retro-left img {
+  width: 100%;
+  height: 100%;
+}
+
 .retro-bike .retro-text {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -366,6 +392,7 @@ section {
   padding-left: 50px;
   padding-right: 50px;
   width: 100%;
+  height: 100%;
 }
 
 .retro-bike .retro-text h2 {
@@ -387,11 +414,21 @@ section {
   grid-area: retro-middle-bottom;
 }
 
+.retro-bike .retro-middle-bottom img {
+  width: 100%;
+  height: 100%;
+}
+
 .retro-bike .retro-right {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   grid-area: retro-right;
+}
+
+.retro-bike .retro-right img {
+  max-width: 100%;
+  height: 100%;
 }
 
 .slick-dotted.slick-slider {
@@ -463,6 +500,7 @@ section {
 
 .shop-now .shop-image img {
   width: 100%;
+  height: 100%;
 }
 
 .shop-now .shop-left-box {
@@ -761,13 +799,13 @@ section {
     font-size: 30px;
   }
   .new-generation p {
-    font-size: 25px;
+    font-size: 20px;
   }
   .middle h2 {
     font-size: 30px;
   }
   .middle p {
-    font-size: 25px;
+    font-size: 20px;
   }
   .base-menu .active-menu {
     visibility: visible;
@@ -788,6 +826,7 @@ section {
     height: 30px;
     position: relative;
     margin-top: 50px;
+    margin-left: 50px;
   }
   .base-menu {
     position: relative;
@@ -799,7 +838,7 @@ section {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     top: 150px;
-    justify-items: end;
+    justify-items: stretch;
     z-index: 20;
     border: 1px solid rgba(0, 0, 0, 0.26);
     background-color: #64c29e9f;
@@ -811,12 +850,9 @@ section {
   }
   .base-menu .vertical-menu li a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     color: rgba(0, 0, 0, 0.664);
     padding: 10px;
-  }
-  .base-menu .vertical-menu li a:hover {
-    border-radius: 10px;
   }
   .nav-mobile-menu span {
     height: 2px;
@@ -902,13 +938,13 @@ section {
     font-size: 30px;
   }
   .new-generation p {
-    font-size: 25px;
+    font-size: 20px;
   }
   .middle h2 {
     font-size: 30px;
   }
   .middle p {
-    font-size: 25px;
+    font-size: 20px;
   }
   .vintage {
         grid-template-areas: 'vintage-text' 'vintage-bottom' 'vintage-left';
@@ -933,9 +969,6 @@ section {
   }
   .retro-bike {
         grid-template-areas: 'retro-text' 'retro-middle-bottom' 'retro-left' 'retro-right';
-  }
-  .retro-bike .retro-middle-bottom img {
-    width: 100%;
   }
   .retro-bike .retro-left img {
     width: 100%;
